@@ -25,6 +25,7 @@ BackboneSwitch Configuration
 • 	Trunk ports configured using dot1q
 • 	VLANs passed between ServerRouter and Firewall
 These configurations ensured proper Layer 2 segmentation and enabled the ServerRouter to route traffic between VLANs.
+
 II. Traffic Flow Configuration
 Firewall Rules Implemented
 A. 	Allow HTTP (80) from WAN → Web Server
@@ -53,6 +54,7 @@ A ping test from the firewall console confirmed the issue:
 (Insert ping failure screenshot here)
 <img width="723" height="459" alt="Screenshot 2026-02-28 161619" src="https://github.com/user-attachments/assets/31d42a50-6c4a-443b-9e08-acccf4c6a4f0" />
 This demonstrated that the firewall could not reach the Server VLAN, preventing completion of the firewall rule configuration.
+
 III. 🛡️ Organizational Security Strategy
 A. How Security Posture Improved
 The restructuring significantly improves the organization’s security posture through:
