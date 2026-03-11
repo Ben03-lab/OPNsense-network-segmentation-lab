@@ -11,6 +11,7 @@ The network was redesigned to segment traffic into multiple VLANs routed through
 The OPNsense firewall provides perimeter protection, while internal VLANs isolate departments and servers.
 
 B. Port Assignment & VLAN Configuration
+
 <img width="689" height="485" alt="Screenshot 2026-02-28 102518" src="https://github.com/user-attachments/assets/12882a52-8b38-4dfb-9d5a-5b90b0aadb5d" />
 <img width="691" height="485" alt="Screenshot 2026-02-28 102606" src="https://github.com/user-attachments/assets/3a2b1225-79f4-48e2-8169-d771148e6fc7" />
 <img width="693" height="484" alt="Screenshot 2026-02-28 102657" src="https://github.com/user-attachments/assets/fd44ac30-e3d8-4578-9a9e-78b393469f31" />
@@ -59,8 +60,9 @@ OPNsense requires a gateway object to be created through the GUI before static r
 Because the GUI was unreachable, the gateway object could not be created, and the firewall continued to drop return traffic.
 Ping Test Confirmation
 A ping test from the firewall console confirmed the issue:
-(Insert ping failure screenshot here)
+
 <img width="723" height="459" alt="Screenshot 2026-02-28 161619" src="https://github.com/user-attachments/assets/31d42a50-6c4a-443b-9e08-acccf4c6a4f0" />
+
 This demonstrated that the firewall could not reach the Server VLAN, preventing completion of the firewall rule configuration.
 
 III. 🛡️ Organizational Security Strategy
